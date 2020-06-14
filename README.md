@@ -1,6 +1,8 @@
 # Vue Todo List
 2020년 5월 25일 비트교육센터에서 Vue.js 실습 강의를 위해 만든 Todo List
 
+![screencapture](./screencapture.png)
+
 ## todo-template
 vue 어플리케이션을 만들기 전 HTML,CSS를 이용하여 레이아웃을 만들었다.
 
