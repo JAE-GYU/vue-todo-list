@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="layout-container" class="flex-container">
+        <header>
+            <div class="header-logo">Vue Todo</div>
+        </header>
+        <div class="flex-container layout-base">
+            <nav id="nav-categories">            
+                <div class="nav-categories__label">카테고리</div>
+                <div class="nav-categories__wrap">
+                    <ul class="nav-categories__list">
+                        <li class="nav-categories__item selected">
+                            <span>모든 할 일</span>
+                            <i class="remove-icon material-icons">remove_circle_outline</i>
+                        </li>            
+                        <li class="nav-categories__item">
+                            <span>카테고리1</span>
+                            <i class="remove-icon material-icons">remove_circle_outline</i>
+                        </li>            
+                        <li class="nav-categories__item">
+                            <span>카테고리2</span>
+                            <i class="remove-icon material-icons">remove_circle_outline</i>
+                        </li>                                                                     
+                    </ul>
+                    <div class="nav-categories__add">                        
+                        <input id="category-add" name="categroy-add" type="text" placeholder="새 카테고리 추가">                
+                        <i class="prefix material-icons">add</i>                    
+                        <button style="display: none;" class="suffix nav-categories__add-btn">추가</button>
+                    </div>
+                </div>                
+            </nav>
+            <section id="todo-list__container">
+                <div class="todo-list__title">모든 할 일</div>
+                <div class="todo-list__wrap">
+                    <div class="todo-item add-todo">                        
+                        <input type="text" id="new-todo" placeholder="할 일 추가">                        
+                        <button style="display: none;" class="todo-item-btn">추가</button>
+                        <i class="add-icon material-icons">add</i>                        
+                    </div>
+                    <div class="todo-item">
+                        <div class="todo-checkbox">
+                            <input
+                              class="todo-checkbox__input"
+                              id="todo-check1"
+                              type="checkbox"                              
+                            />
+                            <label class="todo-checkbox__label" for="todo-check1">
+                              <span class="todo-checkbox__inner">
+                                <i class="material-icons">check</i>
+                              </span>                              
+                            </label>                            
+                        </div>       
+                        <span class="todo-item__title">Vue 공부</span>
+                        <div class="todo-item-btn__wrap">
+                            <button class="todo-item-btn edit">편집</button>
+                            <button class="todo-item-btn remove">삭제</button>
+                        </div>       
+                    </div>                     
+                    <div class="todo-item">
+                        <div class="todo-checkbox">
+                            <input
+                              class="todo-checkbox__input"
+                              id="todo-check2"
+                              type="checkbox"                              
+                            />
+                            <label class="todo-checkbox__label" for="todo-check2">
+                              <span class="todo-checkbox__inner">
+                                <i class="material-icons">check</i>
+                              </span>                              
+                            </label>                            
+                        </div>       
+                        <input class="todo-item__title" value="Vue Cli 설치하기">
+                        <div class="todo-item-btn__wrap">
+                            <button class="todo-item-btn edit">취소</button>
+                            <button class="todo-item-btn remove">삭제</button>
+                        </div>       
+                    </div>                     
+                </div>
+            </section>
+        </div>
+    </div>       
+</body>
+</html>
